@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "newsviewer"
+    }
+  },
+  "defaultProject": "newsviewer",
+  "cli": {
+    "analytics": false
+  }
 }

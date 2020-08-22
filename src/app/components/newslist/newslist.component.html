@@ -1,0 +1,10 @@
+<section>
+    <input class="search-input" type="search" id="" placeholder="...Search" (change)="search($event.target.value)">
+  <div class="news-container">
+    <app-loader *ngIf="isLoading"></app-loader>
+    <app-news-item *ngFor="let news of newsList" [news]="news"></app-news-item>
+  </div>
+  <app-paginator [currentPage]="currentPage" 
+  [pageAmount]="pageAmount" (pageUp)="changePage(true)"
+  (pageDown)="changePage(false)"></app-paginator>
+</section>

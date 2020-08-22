@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 5%;
+    width: 100%;
+    color: white;
+    z-index: 99;
+    opacity: 0.9;
+    height: 32px;
+    margin-bottom: 4px;
+}
+
+.author {
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    input {
+        // visibility: hidden;
+    }
+}

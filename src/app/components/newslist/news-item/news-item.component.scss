@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 66.66%;
+    transform: translateX(25%);
+    border-top: 4px solid cornflowerblue;
+    cursor: pointer;
+    padding: 8px;
+}
+
+h2 {
+    margin: 4px;
+    margin-left: 0;
+}
+
+img {
+    object-fit: contain;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+        width: 40%;
+    }
+    P {
+        margin-left: 8px;
+        flex: 1 1 192px;
+    }
+    p, img {
+        min-width: 192px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        transform: none;
+    }
+}

@@ -1,0 +1,7 @@
+<div class="paginator-container">
+    <button [ngClass]="{'disabled': currentPage <= 1}" (click)="pageDown.emit()">PREV</button>
+    <span>
+        <span>{{currentPage}}</span>&nbsp;Из&nbsp;<span>{{pageAmount}}</span>
+    </span>
+    <button [ngClass]="{'disabled': currentPage >= pageAmount}" (click)="pageUp.emit()">NEXT</button>
+</div>
